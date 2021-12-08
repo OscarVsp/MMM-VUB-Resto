@@ -15,6 +15,7 @@ The data are retrieved from http://call-cc.be/files/vub-resto/etterbeek.en.json
 #  Clone the repository into MagicMirror/modules directory and install the dependencies
 cd ./modules
 git clone https://github.com/OscarVsp/MMM-VUB-Resto.git
+cd /MMM-VUB-Resto
 npm install
 ```
 
