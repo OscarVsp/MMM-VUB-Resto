@@ -19,9 +19,7 @@ cd /MMM-VUB-Resto
 npm install
 ```
 
-2. Create an entry in 'config/config.js' with your url and any config options.
-
-### Sample
+### Config
 
 **Basic Example:**
 
