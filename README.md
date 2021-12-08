@@ -30,7 +30,7 @@ npm install
 ```jsonc
 {
   module: 'MMM-VUB-Resto',
-  position: 'bottom_left',
+  position: 'bottom_left'
 },
 ```
 
