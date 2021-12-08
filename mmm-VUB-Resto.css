@@ -1,0 +1,10 @@
+p {
+  display: inline;
+}
+hr {
+  border-color: #666;
+  margin: 4px 0px;
+}
+td {
+  padding: 0px 5px 0px 0px;
+}
