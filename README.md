@@ -56,14 +56,14 @@ npm install
       <td><code>refreshInterval</code></td>
       <td>The interval with which the url is queried and your values are updated.
         <br><b>Type:</b> <code>int</code> (seconds)
-        <br><b>Default:</b> <code>6000000</code> => 5 minutes
+        <br><b>Default:</b> <code>3,600,000</code> => 1 hour
       </td>
     </tr>
     <tr>
       <td><code>headerIcon</code></td>
       <td>The Icon for your Header
         <br><b>Type:</b> <code>string</code> <a href="https://fontawesome.com/icons?d=gallery">any FontAwesome Icon</a>
-        <br><b>Default:</b> <code></code> (none)
+        <br><b>Default:</b> <code></code> "fa-utensils"
       </td>
     </tr>
     <tr>
