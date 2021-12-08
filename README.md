@@ -30,7 +30,8 @@ npm install
 ```jsonc
 {
   module: 'MMM-VUB-Resto',
-  position: 'bottom_left'
+  position: 'bottom_left',
+  header: 'Restaurant menu of the day'
 },
 ```
 
@@ -40,6 +41,7 @@ npm install
 {
   module: 'MMM-VUB-Resto',
   position: 'bottom_left',
+  header: 'Restaurant menu of the day',
   config: {
     hide: ["Veggie"]
   }
