@@ -19,7 +19,7 @@ git clone https://github.com/OscarVsp/MMM-VUB-Resto.git
 
 **Install the dependencies**
 ```bash
-cd /MMM-VUB-Resto
+cd MMM-VUB-Resto
 npm install
 ```
 
