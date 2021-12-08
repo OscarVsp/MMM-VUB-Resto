@@ -13,7 +13,7 @@ The data are retrieved from http://call-cc.be/files/vub-resto/etterbeek.en.json
 
 **Clone the repository into MagicMirror/modules directory**
 ```bash
-cd ./modules
+cd ~/MagicMirror/modules
 git clone https://github.com/OscarVsp/MMM-VUB-Resto.git
 ```
 
