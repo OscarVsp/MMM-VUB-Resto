@@ -69,13 +69,13 @@ npm install
       <td><code>headerIcon</code></td>
       <td>The Icon for your Header
         <br><b>Type:</b> <code>string</code> <a href="https://fontawesome.com/icons?d=gallery">any FontAwesome Icon</a>
-        <br><b>Default:</b> <code></code> "fa-utensils"
+        <br><b>Default:</b> <code>"fa-utensils"</code> 
       </td>
     </tr>
     <tr>
       <td><code>hides</code></td>
       <td>The values you want to hide
-        <br><b>Type:</b> <code>array</code>
+        <br><b>Type:</b> <code>array</code> Possible values are <code>"Soup"</code>,<code>"Menu 1"</code>,<code>"Menu 2"</code>,<code>"Wok"</code>,<code>"Veggie"</code> and <code>Pasta</code>
         <br><b>Default:</b> <code>[]</code> 
       </td>
     </tr>
