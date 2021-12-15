@@ -1,7 +1,7 @@
 # MMM-VUB-Resto
 
 A Module for [MagicMirror](https://github.com/MichMich/MagicMirror) designed to
-display the menu of the vub restaurant.
+display the menu of the restaurant at the Vrije Universiteit Brussel.
 
 The data are retrieved from http://call-cc.be/files/vub-resto/etterbeek.en.json
 
@@ -19,7 +19,7 @@ git clone https://github.com/OscarVsp/MMM-VUB-Resto.git
 
 **Install the dependencies**
 ```bash
-cd MMM-VUB-Resto
+cd ~/MagicMirror/modules/MMM-VUB-Resto
 npm install
 ```
 
