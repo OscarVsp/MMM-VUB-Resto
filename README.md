@@ -20,12 +20,12 @@ git clone https://github.com/OscarVsp/MMM-VUB-Resto.git
 ```
 
 **Install the dependencies**
-```bash
-cd ~/MagicMirror/modules/MMM-VUB-Resto
+```
+cd /MMM-VUB-Resto
 npm install
 ```
 
-### Config
+### Configuration
 
 **Basic Example:**
 
@@ -33,7 +33,6 @@ npm install
 {
   module: 'MMM-VUB-Resto',
   position: 'bottom_left',
-  header: 'Restaurant menu of the day'
 },
 ```
 
@@ -43,14 +42,13 @@ npm install
 {
   module: 'MMM-VUB-Resto',
   position: 'bottom_left',
-  header: 'Restaurant menu of the day',
   config: {
     hide: ["Veggie"]
   }
 },
 ```
 
-## Configuration
+## Parameters
 
 <table width="100%">
   <thead>
@@ -63,7 +61,7 @@ npm install
     <tr>
       <td><code>refreshInterval</code></td>
       <td>The interval with which the url is queried and your values are updated.
-        <br><b>Type:</b> <code>int</code> (seconds)
+        <br><b>Type:</b> <code>int</code> (milliseconds)
         <br><b>Default:</b> <code>3,600,000</code> => 1 hour
       </td>
     </tr>
@@ -71,14 +69,13 @@ npm install
       <td><code>headerIcon</code></td>
       <td>The Icon for your Header
         <br><b>Type:</b> <code>string</code> <a href="https://fontawesome.com/icons?d=gallery">any FontAwesome Icon</a>
-        <br><b>Default:</b> <code>"fa-utensils"</code> 
+        <br><b>Default:</b> <code></code> "fa-utensils"
       </td>
     </tr>
     <tr>
-      <td><code>hide</code></td>
+      <td><code>hides</code></td>
       <td>The values you want to hide
         <br><b>Type:</b> <code>array</code>
-        <br><b>Possible values:</b> <code>"Soup"</code>,<code>"Menu 1"</code>,<code>"Menu 2"</code>,<code>"Wok"</code>,<code>"Veggie"</code> and <code>"Pasta"</code>
         <br><b>Default:</b> <code>[]</code> 
       </td>
     </tr>
