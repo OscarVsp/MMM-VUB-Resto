@@ -47,37 +47,13 @@ npm install
 
 ## Parameters
 
-<table width="100%">
-  <thead>
-    <tr>
-      <th>Property</th>
-      <th width="100%">Description</th>
-    </tr>
-  <thead>
-  <tbody>
-    <tr>
-      <td><code>refreshInterval</code></td>
-      <td>The interval with which the url is queried and your values are updated.
-        <br><b>Type:</b> <code>int</code> (milliseconds)
-        <br><b>Default:</b> <code>3,600,000</code> => 1 hour
-      </td>
-    </tr>
-    <tr>
-      <td><code>headerIcon</code></td>
-      <td>The Icon for your Header
-        <br><b>Type:</b> <code>string</code> <a href="https://fontawesome.com/icons?d=gallery">any FontAwesome Icon</a>
-        <br><b>Default:</b> <code></code> "fa-utensils"
-      </td>
-    </tr>
-    <tr>
-      <td><code>hides</code></td>
-      <td>The values you want to hide
-        <br><b>Type:</b> <code>array</code>
-        <br><b>Default:</b> <code>[]</code> 
-      </td>
-    </tr>
-  </tbody>
-</table>
+ 
+| Option           | Type  | Description
+|----------------- |----------- |-----------
+| `refreshInterval` | *Optional* | The interval of the update from the file. **Default:** `60*60*1000` (1 hour)
+| `headerIcon` | *Optional* | The icon to use for the header (<a href="https://fontawesome.com/icons?d=gallery">any FontAwesome Icon</a>). **Default:** "fa-utensils"
+| `hides` | *Optional* | The list of the menu name to hide. **Default:** `[]` (none)
+
 
 ## Scrapper configuration
 
