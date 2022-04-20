@@ -50,7 +50,8 @@ npm install
  
 | Option           | Type  | Description
 |----------------- |----------- |-----------
-| `refreshInterval` | *Optional* | The interval of the update from the file. **Default:** `60*60*1000` (1 hour)
+| `updateInterval` | *Optional* | The interval of the update from the file. **Default:** `60*60*1000` (1 hour)
+| `scraperInterval` | *Optional* | The interval of the update for the scraper. **Default:** `24*60*60*1000` (1 day)
 | `headerIcon` | *Optional* | The icon to use for the header (<a href="https://fontawesome.com/icons?d=gallery">any FontAwesome Icon</a>). **Default:** "fa-utensils"
 | `hides` | *Optional* | The list of the menu name to hide. **Default:** `[]` (none)
 
