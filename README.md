@@ -59,4 +59,6 @@ npm install
 ## Attribution
 
 Based on MMM-Json from Daniel Habenicht
-https://github.com/DanielHabenicht/MMM-json
+https://github.com/DanielHabenicht/MMM-json for the part that display the json content.
+
+Use the scraper made by m1dnight (https://github.com/m1dnight/vub-resto-scraper) to get the data.
