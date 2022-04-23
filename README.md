@@ -51,7 +51,7 @@ npm install
  
 | Option           | Type  | Description
 |----------------- |----------- |-----------
-| `updateInterval` | *Optional* | The interval of the update from the file. <br /> **Type:** int <br /> **Default:** `60*60*1000` (1 hour)
+| `updateInterval` | *Optional* | The interval of time for the update (in milliseconde). <br /> **Type:** int <br /> **Default:** `60*60*1000` (1 hour)
 | `headerIcon` | *Optional* | The icon to use for the header. **Type:** <a href="https://fontawesome.com/icons?d=gallery">Any FontAwesome Icon</a>. <br /> **Default:** "fa-utensils"
 | `hides` | *Optional* | The list of the menu name to hide. <br /> **Type:** `list`<br />**possible elements:** `Soup`, `Menu 1`, `Menu 2`, `Fish`, `Veggie`, `Pasta` and `Wok` <br /> **Default:** `[]` (none)
 
