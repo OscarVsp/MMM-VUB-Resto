@@ -51,21 +51,9 @@ npm install
 | Option           | Type  | Description
 |----------------- |----------- |-----------
 | `updateInterval` | *Optional* | The interval of the update from the file. **Default:** `60*60*1000` (1 hour)
-| `scraperInterval` | *Optional* | The interval of the update for the scraper. **Default:** `24*60*60*1000` (1 day)
 | `headerIcon` | *Optional* | The icon to use for the header (<a href="https://fontawesome.com/icons?d=gallery">any FontAwesome Icon</a>). **Default:** "fa-utensils"
 | `hides` | *Optional* | The list of the menu name to hide. **Default:** `[]` (none)
 
-
-## Scrapper configuration
-
-To automaticlly get the data at the beginning of the week, add the following lines to the crontab service using `crontab -e`:
-
-```
-6 * * 1 python3 /PathToScraperDir/main.py -- version 1 --output /PathToModule/MMM-VUB-Resto
-@reboot python3 /PathToScraperDir/main.py -- version 1 --output /PathToModule/MMM-VUB-Resto
-```
-
-This will execute the scraper every first day of the week, at 6:00 a.m. as well as each time the raspberry pi starts.
 
 ## Attribution
 
