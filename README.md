@@ -4,7 +4,8 @@ A Module for [MagicMirror](https://github.com/MichMich/MagicMirror) designed to
 display the menu of the restaurant at the Vrije Universiteit Brussel.
 
 The data of the menu of the week need to be in a json file on the directory of the module.
-To get the data, as there is no API, you can use the scrapper made by m1dnight (https://github.com/m1dnight/vub-resto-scraper)
+To get the data, as there is no API, the scrapper made by m1dnight (https://github.com/m1dnight/vub-resto-scraper) is used.
+
 ## Sample
 
 ![alt text](https://github.com/OscarVsp/MMM-VUB-Resto/raw/main/sample.jpg "Example")
