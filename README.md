@@ -8,7 +8,7 @@ To get the data, as there is no API, the scrapper made by m1dnight (https://gith
 
 ## Sample
 
-![alt text](https://github.com/OscarVsp/MMM-VUB-Resto/raw/main/sample.jpg "Example")
+![alt text](https://github.com/OscarVsp/MMM-VUB-Resto/raw/main/sample.png "Example")
 
 ## Module installation
 
