@@ -7,23 +7,63 @@
 Module.register("MMM-VUB-Resto", {
   // Default module config.
   defaults: {
-    url: "http://call-cc.be/files/vub-resto/etterbeek.en.json",
-		headerIcon: "fa-utensils",
-    refreshInterval: 1000 * 60 * 60, // 1 hour
-    hide: []
+    headerIcon: "fa-utensils",
+    updateInterval: 1000 * 60 * 60, // 1 hour
+    hides: []
   },
 
   start: function () {
-    Log.info("Starting module: " + this.name);
+    console.log("Starting module: " + this.name);
+    this.weekFetched = false;
+    this.firstFetch = false;
+    this.dataFectedError = false;
     this.loaded = false;
-    this.getData();
 
     var self = this;
+    self.updateData();
     // Schedule updates
     setInterval(function () {
-      self.getData();
-      self.updateDom();
-    }, this.config.refreshInterval);
+      self.updateData();
+    }, this.config.updateInterval);
+  },
+
+  // Contact node helper for data
+  getDataRequest: function () {
+    this.sendSocketNotification("GET_DATA", {
+      identifier: this.identifier
+    });
+  },
+
+  // Contact node helper for data
+  getData: function () {
+    if (this.firstFetch) {
+      this.sendSocketNotification("LOAD_DATA", {
+        config: this.config,
+        identifier: this.identifier
+      });
+    }
+  },
+
+  updateData: function(){
+    if (!this.firstFetch){
+      this.getDataRequest();
+      console.log("Scraping the vub menu for the first time...");
+    } 
+    else {
+      const d = new Date();
+      let day = d.getDay();
+      if  (day == 0 && !this.weekFetched){
+        this.getDataRequest();
+        console.log("Scraping the new vub menu because it Sunday...");
+      } 
+      else {
+        if (day != 0 && this.weekFetched){
+          this.weekFetched = false;   //Reset the value for the next Sunday
+        }
+        this.getData();
+        this.updateDom();
+      }
+    }
   },
 
   // Import additional CSS Styles
@@ -31,34 +71,45 @@ Module.register("MMM-VUB-Resto", {
     return ["mmm-VUB-Resto.css"];
   },
 
-  // Contact node helper for data
-  getData: function () {
-    Log.info("MMM-VUB-Resto: getting data");
+  
 
-    this.sendSocketNotification("MMM_VUB_Resto_GET_REQUEST", {
-      config: this.config,
-      identifier: this.identifier
-    });
-  },
 
-  // Handle node helper response
+  
+  // Override socket notification handler.
   socketNotificationReceived: function (notification, payload) {
     if (
-      notification === "MMM_VUB_Resto_GET_RESPONSE" &&
+      notification === "DATA_FETCHED" &&
       payload.identifier == this.identifier
     ) {
-      if (payload.error === true) {
-        console.error(
-          "MMM-VUB-Resto: An Error occured while fetching your response. Please have a look at the server log."
-        );
-        this.loaded = false;
+      if (payload.error){
+        this.dataFectedError = true
+        console.error("Error scraping the vub menu.");
+        this.updateDom(1000);
       } else {
-        this.loaded = true;
-        this.response = payload.data;
+        console.info("Vub menu get scraped without error.");
+        this.dataFectedError = false;
+        if (!this.firstFetch){
+          this.firstFetch = true;
+          this.weekFetched = true;}
+        const d = new Date();
+        let day = d.getDay();
+        if (day == 0) {
+          this.weekFetched = true;
+        }
+        this.updateDom(1000);
+        this.getData();
       }
-      this.updateDom(1000);
+    } else if (
+      notification == "DATA_LOADED" &&
+      payload.identifier == this.identifier
+    ) {
+      console.info("Vub menu of the day updated");
+      this.loaded = true;
+      this.response = payload.data;
+      this.updateDom(100);
     }
   },
+
   // Override the Header generator
   getHeader: function () {
     // If an Icon should be displayed we need our own header
@@ -72,19 +123,28 @@ Module.register("MMM-VUB-Resto", {
   // Override dom generator.
   getDom: function () {
     var wrapper = document.createElement("div");
-    if (this.config.url === "") {
-      wrapper.innerHTML = "Please configure url...";
+
+    // Display error message if scraping went wrong
+    if (this.dataFectedError) {
+      wrapper.innerHTML = "Error scraping the data !";
+      return wrapper;
+    }
+
+    // Display loading while waiting for API response
+    if (!this.firstFetch) {
+      wrapper.innerHTML = "Scraping the VUB menu...";
       return wrapper;
     }
 
     // Display loading while waiting for API response
     if (!this.loaded) {
-      wrapper.innerHTML = "Loading...";
+      wrapper.innerHTML = "Loading the VUB menu...";
       return wrapper;
     }
 
-    if (this.response == null){
-      wrapper.innerHTML = "Restaurant is closed.";
+    // If no menu today, it mean that the restaurent is closed
+    if (this.response == null) {
+      wrapper.innerHTML = "Restaurant is closed today.";
       return wrapper;
     }
 
@@ -109,7 +169,7 @@ Module.register("MMM-VUB-Resto", {
       wrapper.appendChild(imgDiv);
       wrapper.appendChild(divider);
     }
-    
+
     for (var i = 0; i < this.response.length; i++) {
       var row = document.createElement("tr");
 
