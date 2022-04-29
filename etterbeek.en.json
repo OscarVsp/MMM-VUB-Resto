@@ -1,0 +1,202 @@
+[
+  {
+    "date": "2022-04-25",
+    "menus": [
+      {
+        "dish": "Vegetable Soup",
+        "name": "Soup",
+        "color": "#fdb85b"
+      },
+      {
+        "dish": "Chicken Schnitzel \"Hawai\"",
+        "name": "Menu 1",
+        "color": "#68b6f3"
+      },
+      {
+        "dish": "Rolled Fillet With Stewed Chicory And Shallot Sauce",
+        "name": "Menu 2",
+        "color": "#cc93d5"
+      },
+      {
+        "dish": "Fish & Chips & Vote (Menu Student Council Elections)",
+        "name": "Fish",
+        "color": "#ff9861"
+      },
+      {
+        "dish": "Sweet Potato Dahl With Halloumi",
+        "name": "Veggie",
+        "color": "#87b164"
+      },
+      {
+        "dish": "Vegan Pasta With Mushrooms",
+        "name": "Pasta",
+        "color": "#de694a"
+      },
+      {
+        "dish": "Chicken Stir-Fry With Coconut-Curry Sauce",
+        "name": "Wok",
+        "color": "#6c4c42"
+      }
+    ]
+  },
+  {
+    "date": "2022-04-26",
+    "menus": [
+      {
+        "dish": "Tomato Soup",
+        "name": "Soup",
+        "color": "#fdb85b"
+      },
+      {
+        "dish": "Let'S Taco 'Bout The Elections (Menu Student Council Elections)",
+        "name": "Menu 1",
+        "color": "#68b6f3"
+      },
+      {
+        "dish": "Pork Roast \"Orloff\" With Green Beans And Mustard Sauce",
+        "name": "Menu 2",
+        "color": "#cc93d5"
+      },
+      {
+        "dish": "Fish Fillet With Dill Sauce And Broccoli Mash",
+        "name": "Fish",
+        "color": "#ff9861"
+      },
+      {
+        "dish": "Oven Dish With Goat Cheese And Zucchini",
+        "name": "Veggie",
+        "color": "#87b164"
+      },
+      {
+        "dish": "Creamy Chicken Pasta With Endives, Paprika And Mushrooms",
+        "name": "Pasta",
+        "color": "#de694a"
+      },
+      {
+        "dish": "Teriyaki Tofu With Stir-Fried Vegetables (Vegan)",
+        "name": "Wok",
+        "color": "#6c4c42"
+      }
+    ]
+  },
+  {
+    "date": "2022-04-27",
+    "menus": [
+      {
+        "dish": "Leek Soup",
+        "name": "Soup",
+        "color": "#fdb85b"
+      },
+      {
+        "dish": "Meatballs In Tomato Sauce With Mixed Salad",
+        "name": "Menu 1",
+        "color": "#68b6f3"
+      },
+      {
+        "dish": "Chicken Fillet With Apricot-Apple Sauce",
+        "name": "Menu 2",
+        "color": "#cc93d5"
+      },
+      {
+        "dish": "Fish Fillet Italian Style With Roasted Vegetables",
+        "name": "Fish",
+        "color": "#ff9861"
+      },
+      {
+        "dish": "Vegan Vol-Au-Vent",
+        "name": "Veggie",
+        "color": "#87b164"
+      },
+      {
+        "dish": "Pesto Chicken Pasta",
+        "name": "Pasta",
+        "color": "#de694a"
+      },
+      {
+        "dish": "Soy Stir-Fry With Fine Vegetables (Veggie)",
+        "name": "Wok",
+        "color": "#6c4c42"
+      }
+    ]
+  },
+  {
+    "date": "2022-04-28",
+    "menus": [
+      {
+        "dish": "Mushroom Soup",
+        "name": "Soup",
+        "color": "#fdb85b"
+      },
+      {
+        "dish": "Polled Chicken Wrap With Campaingslaw (Menu Student Council Elections)",
+        "name": "Menu 1",
+        "color": "#68b6f3"
+      },
+      {
+        "dish": "Fried Sausage With Carrots",
+        "name": "Menu 2",
+        "color": "#cc93d5"
+      },
+      {
+        "dish": "Fish Gratin With Spinach",
+        "name": "Fish",
+        "color": "#ff9861"
+      },
+      {
+        "dish": "Cheese Croquettes With Mixed Salad",
+        "name": "Veggie",
+        "color": "#87b164"
+      },
+      {
+        "dish": "Tagliatelle Alla Carbonara",
+        "name": "Pasta",
+        "color": "#de694a"
+      },
+      {
+        "dish": "Vegan Pad Thai",
+        "name": "Wok",
+        "color": "#6c4c42"
+      }
+    ]
+  },
+  {
+    "date": "2022-04-29",
+    "menus": [
+      {
+        "dish": "Farmers Soup",
+        "name": "Soup",
+        "color": "#fdb85b"
+      },
+      {
+        "dish": "Election Burger (Menu Student Council Elections)",
+        "name": "Menu 1",
+        "color": "#68b6f3"
+      },
+      {
+        "dish": "Turkey Steak With Mixed Vegetables And Peppercorn Sauce",
+        "name": "Menu 2",
+        "color": "#cc93d5"
+      },
+      {
+        "dish": "Fish Fillet With Ratatouille Vegetables",
+        "name": "Fish",
+        "color": "#ff9861"
+      },
+      {
+        "dish": "Vegetable Omelette",
+        "name": "Veggie",
+        "color": "#87b164"
+      },
+      {
+        "dish": "Vegan Spaghetti Bolognese",
+        "name": "Pasta",
+        "color": "#de694a"
+      },
+      {
+        "dish": "Salmon Stir-Fry With Coconut Milk And Paprika",
+        "name": "Wok",
+        "color": "#6c4c42"
+      }
+    ]
+  }
+]
