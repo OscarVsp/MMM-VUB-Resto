@@ -1,5 +1,7 @@
 # MMM-VUB-Resto
 
+**DOES NOT WORK ANYMORE DUE TO CHANGES ON THE VUB WEBSITE**
+
 A Module for [MagicMirror](https://github.com/MichMich/MagicMirror) designed to
 display the menu of the restaurant at the Vrije Universiteit Brussel.
 
